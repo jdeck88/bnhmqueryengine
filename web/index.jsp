@@ -2,7 +2,7 @@
 
 <div id="validation" class="section">
     <div class="sectioncontent">
-        Search and read scanned historical field notebooks from the Museum of Vertebrate Zoology
+        Query Berkeley Natural History Museum Collections using EcoEngine
 
         <p>
 

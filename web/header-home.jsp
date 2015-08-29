@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>ecoReaderd</title>
+    <title>Query Berkeley Natural History Museum Collections</title>
 
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
