@@ -15,7 +15,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/ecoreader.js"></script>
+    <script type="text/javascript" src="js/bnhmqueryengine.js"></script>
 
 </head>
 

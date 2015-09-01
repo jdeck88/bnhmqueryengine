@@ -3,21 +3,21 @@
 <div id="validation" class="section">
     <div class="row" id="query">
         <p>
-            Query Berkeley Natural History Museum Collections
+            Query Berkeley Natural History Museum Collections (NOTE: this only fetches matching counts, need to get actual specimens)
         </p>
 
         <div class="form-horizontal my-form">
           <div class="form-group form-group-sm" id="author_row">
-            <label for="author" class="col-md-2 control-label">Any Scientific or Common Name</label>
-            <div class="col-md-3" id="author_combobox">
-              <select class="combobox form-control" width=20 id="authors">
-                        <option value=''>Loading authors ...</option>
-              </select>
-            </div>
+            <label for="author" class="col-md-2 control-label">Name</label>
+          <div class="col-md-3" id="namesoupformgroup">
+              <input type="text" class="form-control" id="namesoup">
+          </div>
           <div class="col-md-1" id="toggle_query">
             <button class="btn btn-default btn-sm" type="button" onclick="toggleQuery();">+</button>
           </div>
-          <div class="col-md-1"><input type="button" value="Submit" class="btn btn-default btn-sm btn-block"></div>
+          <div class="col-md-1"><input type="button" value="Search" class="btn btn-default btn-sm btn-block" id="search"></div>
+                    <div class="col-md-1"><input type="button" value="Observations" class="btn btn-default btn-sm btn-block" id="observations"></div>
+
           </div>
         </div>
 
@@ -48,7 +48,9 @@
         </form>
     </div>
 
+        <div class="container-fluid">
         <div class="row" id="results">
+        </div>
         </div>
 
 </div>
@@ -56,10 +58,12 @@
 
 <script>
     $(document).ready(function() {
-        populateAuthors();
-        $("input[type=button]").click(function() {
-             populateVolumes();
+        $("#search").click(function() {
+             search();
         });
+        $("#observations").click(function() {
+                     observations();
+                });
     });
 </script>
 
