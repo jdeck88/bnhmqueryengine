@@ -82,7 +82,7 @@ function observations(modifier) {
     uri.search(modifier);
     var html = "<a href='" + getBerkeleyMapperLink(uri.toString()) + "'>Map all results with BerkeleyMapper</a>";
 
-    var html += "<p>";
+    html += "<p>";
 
     // Add our default pagesize
     uri.addSearch("page_size",bqe.observations_page_size);
