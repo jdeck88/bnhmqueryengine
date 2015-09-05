@@ -3,7 +3,7 @@
 <div id="validation" class="section">
     <div class="row" id="query">
         <p>
-            Query Berkeley Natural History Museum Collections (NOTE: this only fetches matching counts, need to get actual specimens)
+            Query Berkeley Natural History Museum Collections
         </p>
 
         <div class="form-horizontal my-form">
@@ -16,8 +16,7 @@
             <button class="btn btn-default btn-sm" type="button" onclick="toggleQuery();">+</button>
           </div>
           <div class="col-md-1"><input type="button" value="Search" class="btn btn-default btn-sm btn-block" id="search"></div>
-                    <div class="col-md-1"><input type="button" value="Observations" class="btn btn-default btn-sm btn-block" id="observations"></div>
-
+          <div class="col-md-1"><input type="button" value="Observations" class="btn btn-default btn-sm btn-block" id="observations"></div>
           </div>
         </div>
 
@@ -59,11 +58,15 @@
 <script>
     $(document).ready(function() {
         $("#search").click(function() {
-             search();
+            if (checkValue($("#namesoup"))) {
+                search("q="+$("#namesoup").val());
+            }
         });
         $("#observations").click(function() {
-                     observations();
-                });
+            if (checkValue($("#namesoup"))) {
+                observations("q="+$("#namesoup").val());
+            }
+        });
     });
 </script>
 

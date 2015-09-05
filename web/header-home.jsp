@@ -16,6 +16,8 @@
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bnhmqueryengine.js"></script>
+    <script type="text/javascript" src="js/URI.js"></script>
+
 
 </head>
 
