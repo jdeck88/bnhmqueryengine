@@ -9,20 +9,13 @@
  <linkbackheader location=""></linkbackheader>
 </metadata>
 
-<gisdata>
-<layer title="Jepson Ecoregions (California)" legend="1" active="1" url="http://ucjeps.berkeley.edu/"><![CDATA[http://darwin.berkeley.edu/data/berkeleymapperdata/ucjeps/jepcodes-v4.kmz]]></layer>
-</gisdata>
-
-<recordlinkback>
-
-</recordlinkback>
 <concepts xmlns:darwin="http://digir.net/schema/conceptual/darwin/2003/1.0">
-<concept viewlist="1" datatype="char120:1" alias="record" />
-<concept viewlist="1" datatype="char120:2" alias="recorded_by" />
+    <concept viewlist="1" datatype="char120:1" alias="record" />
+    <concept viewlist="1" datatype="char120:2" alias="recorded_by" />
     <concept viewlist="1" datatype="char255:1" alias="url" />
     <concept viewlist="1" datatype="char255:2" alias="scientific_name" />
-<concept viewlist="0" datatype="darwin:decimallatitude"	alias="DecimalLatitude" />
-<concept viewlist="0" datatype="darwin:decimallongitude" alias="DecimalLongitude" />
+    <concept viewlist="0" datatype="darwin:decimallatitude"	alias="DecimalLatitude" />
+    <concept viewlist="0" datatype="darwin:decimallongitude" alias="DecimalLongitude" />
 </concepts>
 <annotation show="1">
 <annotation_replyto_email value="bscit@berkeley.edu" />

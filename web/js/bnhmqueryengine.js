@@ -93,18 +93,18 @@ function observations(modifier) {
         html += "<table>";
        $.each(data.results, function( key, value ) {
             html += "<tr>";
-            var url = '';
+            var remote_resource = '';
             var record = '';
             var scientific_name ='';
             var date = '';
             var locality = '';
             var recorded_by = '';
             $.each(value, function (obsKey, obsVal) {
-                if (obsKey == "url") { url = obsVal; }
                 if (obsKey == "record") { record = obsVal; }
                 if (obsKey == "scientific_name") { scientific_name = obsVal; }
                 if (obsKey == "begin_date") { date = obsVal; }
                 if (obsKey == "recorded_by") { recorded_by = obsVal; }
+                if (obsKey == "remote_resource") { remote_resource = obsVal; }
             });
             html += "<td>";
             html += scientific_name;
@@ -113,7 +113,11 @@ function observations(modifier) {
             html += "</td><td>";
             html += recorded_by;
             html += "</td><td>";
-            html += "<a href='" + url + "'>" + record +"</a>";
+            if (remote_resource === '') {
+              html += record;
+            } else {
+              html += "<a href='" + remote_resource + "'>" + record +"</a>";
+            }
             html += "</td>";
             html += "</tr>";
 
