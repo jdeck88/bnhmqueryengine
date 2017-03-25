@@ -1,0 +1,20 @@
+# Command to fetch just BNHM related resources, using boolean operators on sources
+http://wallace.bnhm.berkeley.edu/api/observations/?source_id=1,5,9,12,13,14,15,17,19,20,21,29
+
+# enable bounding box searches
+&bbox=124,32,-114,42
+
+source names:
+=======
+1,MVZ Birds
+5,Consortium of California Herbaria
+9,CalPhotos
+12,MVZ Birds Observations
+13,MVZ Birds Eggs and Nests
+14,MVZ Herp Collection
+15,MVZ Herp Observations
+17,MVZ Mammals
+19,MVZ Mammals Observations
+20,Essig Museum of Entymology
+21,UC Museum for Paleontology 
+29,Moorea Biocode
